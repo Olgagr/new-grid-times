@@ -147,6 +147,10 @@ const TopRow = styled.div`
     justify-content: center;
     gap: 48px;
   }
+
+  @media ${QUERIES.laptopAndUp} {
+    justify-content: flex-end;
+  }
 `;
 
 const Social = styled.div`
@@ -204,6 +208,10 @@ const Subfooter = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media ${QUERIES.laptopAndUp} {
+    align-items: flex-start;
+  }
 `;
 
 const Logo = styled.a`
