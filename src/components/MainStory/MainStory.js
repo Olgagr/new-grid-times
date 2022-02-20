@@ -23,6 +23,8 @@ const Wrapper = styled.article`
 const Image = styled.img`
   display: block;
   width: 100%;
+  height: 320px;
+  object-fit: cover;
   margin-bottom: 12px;
 `;
 
@@ -36,7 +38,7 @@ const Heading = styled.h2`
 const Abstract = styled.p`
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 9;
+  -webkit-line-clamp: 8;
   overflow: hidden;
   font-size: 1rem;
   margin-bottom: 1em;

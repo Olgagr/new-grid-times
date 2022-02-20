@@ -1,5 +1,6 @@
-import React from 'react';
-import styled from 'styled-components/macro';
+import React from "react";
+import styled from "styled-components/macro";
+import { QUERIES } from "../../constants";
 
 const MiniStory = ({ id, image, title }) => {
   return (
@@ -20,9 +21,13 @@ const Wrapper = styled.article`
 
 const Image = styled.img`
   width: 100%;
-  aspect-ratio: 220 / 132;
+  aspect-ratio: 183 / 132;
   object-fit: cover;
   border-radius: 4px;
+
+  @media ${QUERIES.tabletAndUp} {
+    aspect-ratio: 220 / 132;
+  }
 `;
 
 const Title = styled.h3`
