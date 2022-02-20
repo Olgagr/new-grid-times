@@ -140,6 +140,7 @@ const OpinionSection = styled.section`
   grid-area: opinion-stories;
 
   @media ${QUERIES.laptopAndUp} {
+    margin-top: -11px;
     padding-left: 16px;
     border-left: 1px solid ${COLORS.gray[300]};
   }

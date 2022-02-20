@@ -38,8 +38,8 @@ const SpecialtyStoryGrid = () => {
         <div>
           <SportsStories>
             {SPORTS_STORIES.map((data) => (
-              <SportsStoryWrapper>
-                <MiniStory key={data.id} {...data} />
+              <SportsStoryWrapper key={data.id}>
+                <MiniStory {...data} />
               </SportsStoryWrapper>
             ))}
           </SportsStories>
@@ -74,7 +74,7 @@ const MarketCards = styled.div`
 
 const SportsSection = styled.section`
   display: grid;
-  grid-template-columns: minmax(0, 1fr);
+  grid-template-columns: minmax(0, auto);
 
   @media ${QUERIES.laptopAndUp} {
     padding-left: 16px;

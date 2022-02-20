@@ -173,7 +173,7 @@ const TopNavList = styled.ul`
 
 const MainNavArea = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
   gap: 32px;
   padding: 32px 0 48px;
   text-align: center;
