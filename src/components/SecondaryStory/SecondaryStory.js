@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { COLORS, QUERIES } from "../../constants";
+import { QUERIES } from "../../constants";
 
 const SecondaryStory = ({ id, title, image, location, abstract }) => {
   return (
@@ -23,7 +23,7 @@ const Wrapper = styled.article`
   grid-template-columns: 120px 1fr;
   color: var(--color-gray-900);
 
-  @media ${QUERIES.tabletAndUp} {
+  @media ${QUERIES.tabletOnly} {
     grid-template-areas:
       "image image"
       "heading heading"
